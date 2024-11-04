@@ -5,12 +5,12 @@ Sentry.init({
   // Replay may only be enabled for the client-side
   integrations: [
     Sentry.replayIntegration(),
-    /* Sentry.feedbackIntegration({
+    Sentry.feedbackIntegration({
       // Additional SDK configuration goes in here, for example:
       colorScheme: "system",
       isNameRequired: true,
       isEmailRequired: true,
-    }), */
+    }),
   ],
 
   // Set tracesSampleRate to 1.0 to capture 100%
