@@ -34,7 +34,7 @@ async function Navbar() {
                 <BadgePlus className="size-6 sm:hidden" />
               </Link>
 
-              <Link href={`/user/${session.user.id}`}>
+              <Link href={`/user/${session?.id}`}>
                 <Avatar className="size-10">
                   <AvatarImage
                     src={session?.user?.image || ""}
