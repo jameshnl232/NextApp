@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <br />
+      <img src="/assets/thumnail-startup-pitch.png" alt="Project Banner">
+  <br />
 
-## Getting Started
+  <div>
+    <img src="https://img.shields.io/badge/-Typescript-black?style=for-the-badge&logoColor=white&logo=react&color=3178C6" alt="typescript" />
+    <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="nextdotjs" />
+    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
+    <img src="https://img.shields.io/badge/-Sanity-black?style=for-the-badge&logoColor=white&logo=sanity&color=F03E2F" alt="sanity" />
 
-First, run the development server:
+  </div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<h3 align="center">Startup Pitch Platform</h3>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   
+</div>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## <a name="introduction">🤖 Introduction</a>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+A Next.js 15 platform where entrepreneurs can submit their startup ideas for virtual pitch competitions, browse other
+pitches, and gain exposure through a clean minimalistic design for a smooth user experience.
 
-## Learn More
+If you're getting started and need assistance or face any bugs, join our active Discord community with over **34k+**
+members. It's a place where people help each other out.
 
-To learn more about Next.js, take a look at the following resources:
+## <a name="tech-stack">⚙️ Tech Stack</a>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **[Next.js](https://nextjs.org/) (v15)**: A React-based framework that provides hybrid static & server rendering, file-based routing, and more. Next.js powers the core structure of this app and handles server-side rendering for enhanced SEO and performance.
+- **React (v19.0.0)** & **React DOM**: React serves as the backbone of the UI layer, managing the component lifecycle and rendering, while React DOM connects it to the browser.
+- **[Radix UI](https://www.radix-ui.com/)**: A library for building accessible and high-quality UI components. We're using several Radix components, including Avatar, Icons, Slot, and Toast for a consistent UI experience.
+- **[Three.js](https://threejs.org/)** & **React Three Fiber**: These libraries are used for creating 3D graphics in the app, with `@react-three/drei` providing utility components to simplify the Three.js experience.
+- **Tailwind CSS** & **Tailwind Merge**: Tailwind is used for styling, allowing for rapid and responsive design, with `tailwind-merge` helping to manage conflicting class names for a clean codebase.
+- **Styled Components**: A CSS-in-JS library that enables the creation of styled React components. It works alongside Tailwind CSS for complex styling needs.
+- **Lucide Icons**: A library for modern, customizable icons, contributing to the app's visual clarity and appeal.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Content Management & Backend Integration
 
-## Deploy on Vercel
+- **Sanity CMS**: This headless CMS powers content management for the application, with tools like `@sanity/image-url` for image management and `sanity-plugin-markdown` to support Markdown content.
+- **Sentry**: An error-tracking tool for capturing and monitoring issues in real-time, ensuring we can address bugs swiftly in both production and development.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Authentication
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **NextAuth.js (v5 beta)**: NextAuth handles user authentication, providing a secure and flexible solution for managing user sessions within a Next.js environment.
+
+## Utility Libraries
+
+- **Markdown-It** & **EasyMDE**: These libraries enable Markdown support for text formatting and editing within the application, ensuring content is presented clearly.
+- **clsx**: A utility for managing conditional class names, enhancing the readability and maintainability of the component styling.
+- **Slugify**: Used for creating URL-friendly slugs from content titles, improving the SEO and readability of URLs.
+
+## Development Tools
+
+- **TypeScript**: TypeScript enhances the development experience by adding static typing to JavaScript, leading to more reliable and maintainable code.
+- **ESLint**: ESLint is set up to enforce code quality and consistency, with specific configurations for Next.js projects.
+- **PostCSS**: PostCSS processes stylesheets and integrates seamlessly with Tailwind CSS for efficient styling.
+- **Dev Dependencies**: Additional type definitions for libraries like `markdown-it`, `node`, `react`, and `react-dom` ensure TypeScript compatibility across the application.
