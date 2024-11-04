@@ -3,6 +3,9 @@ import { STARTUPS_QUERY } from "@/sanity/lib/queries";
 import StartupCard, { StartupTypeCard } from "@/components/StartupCard";
 import { sanityFetch } from "@/sanity/lib/live";
 
+export const dynamic = "force-dynamic";
+
+
 export default async function Home({
   searchParams,
 }: {
